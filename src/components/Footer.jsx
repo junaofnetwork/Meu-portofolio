@@ -7,7 +7,14 @@ export default function Footer() {
         <p>
           © {new Date().getFullYear()} {profile.name}
         </p>
-        <p>{profile.location}</p>
+        <p className="flex flex-col gap-1 sm:items-end">
+          {profile.email ? (
+            <a href={`mailto:${profile.email}`} className="hover:text-ink">
+              {profile.email}
+            </a>
+          ) : null}
+          <span>{profile.location}</span>
+        </p>
       </div>
     </footer>
   )

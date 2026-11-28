@@ -10,35 +10,25 @@ export default function About() {
             <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
-        <ul className="mt-8 grid gap-4 sm:grid-cols-2">
-          <li className="rounded-lg border border-line bg-card p-4">
-            <p className="text-sm text-muted">Formação técnica</p>
-            <p className="mt-1 font-medium text-ink">
-              {profile.school.role} no{' '}
-              <a
-                href={profile.school.url}
-                className="text-accent underline-offset-2 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {profile.school.name}
-              </a>
-            </p>
-          </li>
-          <li className="rounded-lg border border-line bg-card p-4">
-            <p className="text-sm text-muted">Curso</p>
-            <p className="mt-1 font-medium text-ink">
-              {profile.course.role} na{' '}
-              <a
-                href={profile.course.url}
-                className="text-accent underline-offset-2 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {profile.course.name}
-              </a>
-            </p>
-          </li>
+        <ul className="mt-8 grid gap-4 md:grid-cols-3">
+          {profile.education.map((item) => (
+            <li key={item.name} className="rounded-lg border border-line bg-card p-4">
+              <p className="text-sm text-muted">{item.label}</p>
+              <p className="mt-1 font-medium text-ink">
+                {item.role}
+                {item.status ? ` — ${item.status}` : ''}
+                {' na '}
+                <a
+                  href={item.url}
+                  className="text-accent underline-offset-2 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.name}
+                </a>
+              </p>
+            </li>
+          ))}
         </ul>
       </div>
     </section>

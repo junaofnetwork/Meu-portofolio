@@ -1,54 +1,74 @@
 /**
  * Conteúdo do portfólio.
  *
- * Itens marcados com TODO precisam de confirmação ou arquivo do João
- * (texto, links, foto, currículo, demos). Não invente dados aqui.
+ * Itens marcados com TODO ainda dependem de link ou demo do João.
+ * Não invente dados aqui.
  */
 
 export const profile = {
   name: 'João Eduardo Brandenburg de Almeida',
   shortName: 'João Eduardo',
   title: 'Desenvolvedor em formação',
-  goal: 'Buscando estágio em desenvolvimento web',
-  location: 'Espírito Santo, Brasil',
+  goal: 'Estágio em Desenvolvimento / Back-end Python',
+  location: 'Vila Velha – ES',
   photo: '/perfil.jpg',
   photoAlt: 'Foto de João Eduardo Brandenburg de Almeida',
-  // TODO: substitua perfil.jpg em public/ se quiser uma foto mais recente ou profissional.
-  // TODO: confirme se ainda está cursando o técnico ou se já concluiu.
-  school: {
-    name: 'Ceet Vasco Coutinho',
-    role: 'Cursando o técnico em Informática',
-    url: 'https://vascocoutinho.ceet.secti.es.gov.br/',
-  },
-  // TODO: se quiser, troque o nome exato do curso da EBAC (ex.: Full Stack Python).
-  course: {
-    name: 'EBAC',
-    role: 'Estudando desenvolvimento web',
-    url: 'https://ebaconline.com.br/',
-  },
+  intro:
+    'Cursando Análise e Desenvolvimento de Sistemas na Multivix, técnico em Informática no Centro Estadual Vasco Coutinho e Full Stack Python na EBAC, com foco em back-end. Aberto a estágio.',
+  education: [
+    {
+      label: 'Graduação',
+      role: 'Análise e Desenvolvimento de Sistemas (ADS)',
+      status: 'Em andamento',
+      name: 'Multivix',
+      url: 'https://www.multivix.edu.br/',
+    },
+    {
+      label: 'Formação técnica',
+      role: 'Técnico em Informática',
+      status: 'Em andamento',
+      name: 'Centro Estadual Vasco Coutinho',
+      url: 'https://vascocoutinho.ceet.secti.es.gov.br/',
+    },
+    {
+      label: 'Curso',
+      role: 'Full Stack Python',
+      status: 'Em andamento, com foco em Back-end Python',
+      name: 'EBAC',
+      url: 'https://ebaconline.com.br/',
+    },
+  ],
   links: {
     github: 'https://github.com/junaofnetwork',
     linkedin:
       'https://www.linkedin.com/in/jo%C3%A3o-eduardo-brandenburg-de-almeida-b51720320',
     instagram: 'https://www.instagram.com/joao_aleatorio_do_es/',
   },
-  // TODO: coloque o PDF em public/curriculo.pdf e altere para '/curriculo.pdf'.
-  cvUrl: null,
-  // TODO: e-mail ou WhatsApp profissional, se quiser exibir além do formulário.
-  email: null,
-  whatsapp: null,
+  cvUrl: '/curriculo.pdf',
+  email: 'joaobrandpera@gmail.com',
+  whatsapp: 'https://wa.me/5527992771921',
   formspree: 'https://formspree.io/f/mnnzldrn',
 }
 
 export const aboutParagraphs = [
-  'Sou o João Eduardo, do Espírito Santo. Cursando o técnico em Informática no Ceet Vasco Coutinho e estudando desenvolvimento web na EBAC. Estou buscando um estágio para trabalhar com código no dia a dia — frontend e backend.',
-  'Os projetos abaixo são coisas que eu mesmo construí, do site institucional ao sistema com banco de dados. Alguns ainda estão em repositório privado; posso demonstrar numa conversa.',
+  'Sou o João Eduardo, de Vila Velha, no Espírito Santo. Estudo Análise e Desenvolvimento de Sistemas na Multivix, curso o técnico em Informática no Centro Estadual Vasco Coutinho e faço Full Stack Python na EBAC, com o estudo voltado para back-end em Python. Procuro um estágio em desenvolvimento para trabalhar com código no dia a dia.',
+  'Antes da programação, trabalhei como digitalizador: organizava e tratava documentos, seguindo procedimento e cuidando da padronização. Os projetos abaixo são coisas que eu mesmo construí, do site institucional ao sistema com banco de dados. Alguns ainda estão em repositório privado; posso demonstrar numa conversa.',
 ]
 
 export const stack = [
   {
-    group: 'Linguagens',
-    items: ['JavaScript', 'TypeScript', 'Python', 'PHP', 'Java', 'HTML', 'CSS'],
+    group: 'Linguagens e fundamentos',
+    items: [
+      'Python',
+      'Lógica de programação',
+      'Programação Orientada a Objetos',
+      'JavaScript',
+      'TypeScript',
+      'PHP',
+      'Java',
+      'HTML',
+      'CSS',
+    ],
   },
   {
     group: 'Frontend',
@@ -56,11 +76,15 @@ export const stack = [
   },
   {
     group: 'Backend e dados',
-    items: ['Node.js', 'Express', 'MySQL', 'SQLite', 'Java Swing'],
+    items: ['Node.js', 'Express', 'SQL', 'MySQL', 'SQLite', 'Java Swing'],
   },
   {
     group: 'Ferramentas',
-    items: ['Git', 'Vite', 'Electron', 'Docker', 'Capacitor'],
+    items: ['Git', 'GitHub', 'Vite', 'Electron', 'Docker', 'Capacitor'],
+  },
+  {
+    group: 'Informática',
+    items: ['Windows', 'Suporte técnico', 'Hardware e manutenção', 'Desenvolvimento de sistemas'],
   },
 ]
 

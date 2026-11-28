@@ -22,8 +22,7 @@ export default function Hero() {
             {profile.title} · {profile.location}
           </p>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink/90">
-            {profile.school.role} no {profile.school.name} e {profile.course.role.toLowerCase()} na{' '}
-            {profile.course.name}. Aberto a oportunidades de estágio.
+            {profile.intro}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#projetos" className="btn-primary">

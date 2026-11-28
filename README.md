@@ -34,15 +34,10 @@ Se preferir, instale a CLI (`npm i -g vercel`) na pasta do projeto e rode `verce
 
 ## Conteúdo pendente (TODO)
 
-Edite `src/data.js` (e, se quiser, a foto em `public/`):
+Edite `src/data.js`:
 
-- Coloque o currículo em `public/curriculo.pdf` e defina `cvUrl: '/curriculo.pdf'`.
-- Confirme se ainda está cursando o técnico no Ceet Vasco Coutinho ou se já concluiu.
-- Se quiser, informe o nome exato do curso da EBAC.
-- Envie uma foto mais recente em `public/perfil.jpg`, se desejar.
 - Cole links de demo dos projetos privados (Órbita, IClothes, NEXORA), se existirem.
 - Publique a Barbearia Estilo Livre e cole a URL de demo.
-- Inclua e-mail ou WhatsApp profissional, se quiser exibir além do formulário.
 - Depois do deploy, atualize as tags Open Graph com a URL definitiva.
 
 O formulário de contato usa o Formspree já configurado no projeto anterior.
@@ -51,7 +46,7 @@ O formulário de contato usa o Formspree já configurado no projeto anterior.
 
 ```text
 index.html          # meta, SEO e ponto de entrada do Vite
-public/             # foto, favicon e imagem de compartilhamento
+public/             # foto, currículo, favicon e imagem de compartilhamento
 src/data.js         # textos, stack, projetos e links
 src/components/     # seções da página
 ```
